@@ -8,7 +8,7 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Express + TypeScript Server');
 });
 
-app.post('/', (req: Request, res: Response) => {
+app.post('/post', (req: Request, res: Response) => {
     const { nome, idade, rg } = req.body;
 
     res.send(nome + " " + idade + " " + rg);
